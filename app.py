@@ -20,6 +20,11 @@ def user(name):
     return render_template('user.html',user_name = name)
 
 
+@app.route("/love/<l_name>")
+def love_one(l_name):
+    return render_template('love.html', l_name = l_name)
+
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'),404
