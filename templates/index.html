@@ -1,0 +1,39 @@
+<br/>
+
+<center>
+    <h1>
+        Hello  {{First_name}}! Pranam :D
+    </h1>
+</center>
+
+<p>
+    This is my first webpage.
+</p>
+
+<p style="font-size: large; color: blue; font-family: 'Times New Roman';">
+    This is cool. I want to learn more. 
+</p>
+
+<p style="font-size: medium;color: brown;">
+    {{stuff}}
+</p>
+
+<br/>
+
+<center>
+    <h1>
+        Choose your fav Pizza toppings.
+    </h1>
+</center>
+
+
+<br/>
+
+{% for toppings in Fav_topping%}
+    {% if toppings ==41%}
+        {{toppings + 100 }} <br/>
+    {%else%}
+        {{toppings | upper}} <br/>
+    {%endif%}
+{%endfor%}
+
