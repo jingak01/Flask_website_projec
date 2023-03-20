@@ -1,3 +1,5 @@
+{% extends 'base.html'%}
+{% block content%}
 <br/>
 
 <center>
@@ -15,7 +17,7 @@
 </p>
 
 <p style="font-size: medium;color: brown;">
-    {{stuff}}
+    {{stuff|safe}}
 </p>
 
 <br/>
@@ -37,3 +39,4 @@
     {%endif%}
 {%endfor%}
 
+{% endblock %}
