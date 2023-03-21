@@ -1,0 +1,14 @@
+h1 {
+    color: blue;
+    font-size: 60px;
+
+}
+
+body {
+    background: lightgreen;
+}
+
+#demo {
+    font-size: 50px;
+    color: green;
+}
